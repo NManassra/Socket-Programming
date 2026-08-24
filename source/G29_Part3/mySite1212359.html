@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noura's New Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .form-container input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+
+        .form-container input[type="submit"] {
+            padding: 5px 10px;
+        }
+
+        .image-display img {
+            margin-top: 20px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to My New Site</h1>
+    <p>This is a simple HTML file created.</p>
+    <p>Here are some useful links:</p>
+    <ul>
+        <li><a href="main_ar.html">Back to Home in Arabic</a></li>
+        <li><a href="main_en.html">Back to Home in English</a></li>
+        <li><a href="https://www.birzeit.edu/" target="_blank">Visit Birzeit University</a></li>
+    </ul>
+
+    <div class="form-container">
+        <form>
+            <label for="image-name">Image name</label>
+            <input type="text" id="image-name" name="image" value="study.png">
+            <input type="submit" value="Get Image">
+        </form>
+    </div>
+
+    <div class="image-display">
+        <!-- Image will be displayed here after form submission -->
+        <img src="" alt="Requested Image" id="displayed-image">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const imageName = document.getElementById('image-name').value;
+                const imageElement = document.getElementById('displayed-image');
+                imageElement.src = `additions/img/${imageName}`;
+            });
+        });
+    </script>
+</body>
+
+</html>
