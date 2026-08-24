@@ -1,39 +1,41 @@
 # Python Socket Programming Suite
 
-> Strong supporting — Backend · Birzeit University Computer Engineering portfolio
+> Backend and networking portfolio project · Python · TCP/UDP · HTTP
 
-A networking project covering client/server messaging, multiple clients, HTTP serving, static assets, redirects, and error handling.
+A collection of networking exercises that progress from client–server messaging to multi-client communication and a small HTTP server capable of serving static content, redirects, and error responses.
+
+## Capabilities
+
+- TCP and UDP client/server communication
+- Multi-client request handling
+- HTTP request parsing and response generation
+- Static HTML/CSS asset delivery
+- Redirects and error handling
+- Network diagnostics and protocol-level reasoning
+
+## Run locally
+
+The repository contains several paired exercises rather than one application. Choose the relevant server/client pair, then:
+
+```bash
+python <server-script>.py
+python <client-script>.py
+```
+
+For the HTTP exercise, start its server and open the configured localhost address in a browser. Review host and port constants before running.
+
+## Repository notes
+
+The original complete submission is preserved in `G29.zip`, alongside browsable source files and the project report.
 
 ## What this demonstrates
 
-- Python
-- TCP sockets
-- HTTP
-- client-server architecture
-- networking diagnostics
-
-## Repository contents
-
-The complete submission is preserved in `G29.zip`; the curated source view focuses on Python and web source files.
-
-## Getting started
-
-Run the relevant server script with Python, then connect using its paired client or a browser as described in the project report.
-
-> This is an academic project preserved as portfolio evidence. Review and configure any environment-specific paths, credentials, hardware pins, or dependencies before running it.
-
-## Related portfolio work
-
-- [Multiplication-Tasks-using-defferent-methods](https://github.com/NManassra/Multiplication-Tasks-using-defferent-methods)
-- [Scheduling_-Operating-System](https://github.com/NManassra/Scheduling_-Operating-System)
-- [LinuxManual_Py](https://github.com/NManassra/LinuxManual_Py)
-- [LinuxManualGenerator](https://github.com/NManassra/LinuxManualGenerator)
-- [FREERTOS](https://github.com/NManassra/FREERTOS)
+Backend fundamentals below the framework layer: sockets, protocols, concurrency considerations, request handling, and defensive error responses.
 
 ## Credits
 
-Academic/portfolio work by Noura Manassra. Original commit history is preserved.
+Academic team project. Noura Manassra's portfolio copy preserves the original work and commit history.
 
-## Portfolio focus
+## Portfolio context
 
-This repository supports my broader focus on **Backend + AI engineering**, including APIs, data, intelligent systems, security, systems fundamentals, and practical problem-solving.
+Part of my **Full-Stack + AI** portfolio, demonstrating the networking foundations behind APIs and distributed applications.
