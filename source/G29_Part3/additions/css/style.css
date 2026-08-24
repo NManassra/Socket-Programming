@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+h2 {
+    font-family: 'Alegreya', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #c1ab84;
+    font-size: 28px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h4 {
+    font-size: 21px;
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Handwritten Text Style */
+.handwritten {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 24px;
+    line-height: 1.8;
+    color: #555;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Header CSS */
+.header {
+    background-image: url(../img/pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+.navbar .logo {
+    float: left;
+}
+
+.navbar .nav-items {
+    float: right;
+}
+
+.navbar .logo img {
+    width: 123px;
+}
+
+.navbar .nav-items li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.navbar .nav-items li.active {
+    border-top: 3px solid rgb(238, 162, 124);
+}
+
+.navbar .nav-items li a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-items li a:hover {
+    color: #ff6347;
+}
+
+.fa-bars {
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
+h1 {
+    font-family: 'Alegreya', serif;
+    font-size: 76px;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header .header-content {
+    padding-top: 160px;
+}
+
+.header .header-content p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 10px;
+}
+
+.btn-brown {
+    background-color: rgb(89, 121, 188);
+    color: white;
+}
+
+.header-content .btn:hover {
+    background-color: rgba(225, 225, 225, 0.8);
+    color: #333;
+}
+
+/* Section CSS */
+section {
+    padding: 100px 0;
+}
+
+.left-content,
+.right-content {
+    width: 50%;
+    float: left;
+}
+
+.left-content img,
+.right-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.right-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.icons i {
+    background-color: cadetblue;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+.icons span {
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.icons li {
+    margin-bottom: 15px;
+}
+
+/* Reviews CSS */
+.reviews {
+    background-color: rgb(247, 247, 239);
+}
+
+.reviews .review-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.reviews .right-content {
+    padding: 0 50px;
+}
+
+.review .left-content .icons i {
+    color: rgb(238, 238, 127);
+    font-size: 18px;
+}
+
+/* Projects CSS */
+.projects {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.projects .project-item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projects .project-item .item {
+    width: 45%;
+    margin: 20px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .project-item .item:hover {
+    transform: scale(1.05);
+}
+
+.projects .project-item .item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projects .project-item .item h4,
+.projects .project-item .item p {
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Testimonials CSS */
+.testimonial {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/digital.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 50px 0;
+}
+
+.testimonial p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 1.6;
+    margin: 30px auto;
+    width: 85%;
+}
+
+.testimonial h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.testimonial .comment {
+    font-size: 39px;
+}
+
+.testimonial button {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.testimonial button i {
+    color: white;
+}
+
+.testimonial button:hover {
+    background-color: white;
+}
+
+.testimonial button:hover i {
+    color: black;
+}
+
+/* Contact CSS */
+.contact {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact .social-icons a:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .header .header-content {
+        padding-top: 50px;
+    }
+    .left-content img {
+        width: 100%;
+    }
+    .testimonial p {
+        font-size: 19px;
+        margin: 5px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .fa-bars {
+        display: inline-block;
+        padding-top: 20px;
+    }
+    .nav-list {
+        display: none;
+    }
+    .left-content, .right-content {
+        float: none;
+        width: 100%;
+    }
+    .menue .menue-item .item {
+        width: 100%;
+    }
+    .menue-item .item p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 567px) {
+    h1 {
+        font-size: 45px;
+    }
+    .header .header-content p {
+        font-size: 23px;
+    }
+    .header .header-content img {
+        width: 100%;
+    }
+    .review .left-content {
+        padding-top: 0;
+    }
+    .right-content p, .review .left-content p {
+        font-size: 14px;
+    }
+    .menue .menue-item .item {
+        width: 100%;
+        float: none;
+    }
+}
+
+/*contact css*/
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+  
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+  
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
